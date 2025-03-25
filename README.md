@@ -49,7 +49,7 @@ This script collects .json reports from individual reports/ subfolders inside ea
 - Copies and renames it as sample-name.json into all-json/
 
 🗂️ Example Folder Structure
-Before: Each sample folder has a reports/ directory with a JSON report inside
+Before: Each sample folder has a "reports" directory with a JSON report inside (standard format from cuckoo sandbox)
 After: All .json files are copied and renamed into a single all-json/ directory
 
 ▶️ Usage
