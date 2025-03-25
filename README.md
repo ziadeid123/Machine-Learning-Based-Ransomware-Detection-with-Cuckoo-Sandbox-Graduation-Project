@@ -1,6 +1,3 @@
-🛡️ ML-Powered Ransomware Detection
-🔬 Dynamic Behavior Analysis with Cuckoo Sandbox Integration
-
 ⚠️ WARNING: MALWARE-RELATED CONTENT - This repository contains scripts that download and handle real ransomware samples from MalwareBazaar for educational and research purposes only.
 
 Always use an isolated virtual machine with:
