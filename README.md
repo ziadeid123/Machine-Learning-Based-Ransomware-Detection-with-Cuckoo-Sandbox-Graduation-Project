@@ -1,7 +1,7 @@
 ⚠️ WARNING: MALWARE-RELATED CONTENT -
 This repository contains scripts that download and handle real ransomware samples from MalwareBazaar for educational and research purposes only.
 
-🧪 Always use an isolated virtual machine with:
+ Always use an isolated virtual machine with:
 
 - No internet access
 
