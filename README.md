@@ -1,4 +1,4 @@
-⚠️ Malware-Related Warning
+
 ⚠️ WARNING: MALWARE-RELATED CONTENT
 This repository contains scripts that download and handle real ransomware samples from MalwareBazaar for educational and research purposes only.
 
