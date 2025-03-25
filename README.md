@@ -19,62 +19,43 @@ This repository contains scripts that download and handle real ransomware sample
 This script automates the process of downloading ransomware samples from MalwareBazaar based on the "ransomware" tag and extracts them from password-protected ZIP archives.
 
 🔧 What It Does
-Queries MalwareBazaar for up to 500 ransomware samples.
 
-Extracts their SHA256 hashes from the API response.
+- Queries MalwareBazaar for up to 500 ransomware samples
 
-Downloads the samples as ZIP files.
+- Extracts their SHA256 hashes from the API response
 
-Extracts the contents using the password infected.
+- Downloads the samples as ZIP files
 
-Deletes the ZIP files after extraction.
+- Extracts the contents using the password infected
 
-🗂️ Filesystem Overview
+- Deletes the ZIP files after extraction
 
-~/Desktop/
-├── ransomware_samples/      # Contains .zip ransomware files
-└── extracted_samples/       # Contains extracted (real) ransomware executables
 ▶️ Usage
+- Make the script executable and run it inside a secure virtual machine.
 
-chmod +x download_ransomware.sh
-./download_ransomware.sh
 ⚠️ Run only inside a sandboxed virtual machine.
 
-</details>
-<details> <summary><strong>🔻 extract_jsons.sh</strong> – Collect Dynamic Analysis JSON Reports</summary>
+</details> <details> <summary><strong>🔻 extract_jsons.sh</strong> – Collect Dynamic Analysis JSON Reports</summary>
 📌 Description
 This script collects .json reports from individual reports/ subfolders inside each sample directory and consolidates them into one folder for ML processing or manual review.
 
 🔧 What It Does
-Creates a folder named all-json/.
 
-Iterates through each sample directory.
+- Creates a folder named all-json/
 
-Finds the first .json file inside reports/.
+- Iterates through each sample directory
 
-Copies and renames it as sample-name.json into all-json/.
+- Finds the first .json file inside reports/
+
+- Copies and renames it as sample-name.json into all-json/
 
 🗂️ Example Folder Structure
-Before Running:
+Before: Each sample folder has a reports/ directory with a JSON report inside
+After: All .json files are copied and renamed into a single all-json/ directory
 
-
-samples/
-├── sample1/
-│   └── reports/
-│       └── report.json
-├── sample2/
-│   └── reports/
-│       └── analysis.json
-After Running:
-
-
-all-json/
-├── sample1.json
-├── sample2.json
 ▶️ Usage
+Run this script from inside the folder that contains all your sample directories.
 
-chmod +x extract_jsons.sh
-./extract_jsons.sh
-✅ Run this script from inside the folder that contains all your sample directories.
+✅ Ensures all dynamic reports are in one place for easier processing.
 
 </details>
