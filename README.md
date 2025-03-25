@@ -34,7 +34,7 @@ This script automates the process of downloading ransomware samples from Malware
 
 ⚠️ Run only inside a sandboxed virtual machine.
 
-</details> <details> <summary><strong>🔻 extract_jsons.sh</strong> – Collect Dynamic Analysis JSON Reports</summary>
+</details> <details> <summary><strong>🔻 extract_jsons.sh</strong> – Collect Dynamic Analysis JSON Reports From Extracted Cuckoo ZIP Files</summary>
 📌 Description
 This script collects .json reports from individual reports/ subfolders inside each sample directory and consolidates them into one folder for ML processing or manual review.
 
