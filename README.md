@@ -1,4 +1,4 @@
-# Machine-Learning-Based-Ransomware-Detection-with-Cuckoo-Sandbox-Graduation-Project
+⚠️ Malware-Related Warning
 ⚠️ WARNING: MALWARE-RELATED CONTENT
 This repository contains scripts that interact with and download real ransomware samples from MalwareBazaar. These samples are for research and educational purposes only.
 
@@ -31,14 +31,10 @@ Extracts the payloads using the default password: infected.
 Cleans up the ZIP archives after extraction.
 
 🗂️ Filesystem Overview
-perl
-Copy code
 ~/Desktop/
 ├── ransomware_samples/     # Contains .zip archives of ransomware
 ├── extracted_samples/      # Contains the extracted (real) ransomware files
 🧪 Usage
-bash
-Copy code
 chmod +x download_ransomware.sh
 ./download_ransomware.sh
 ⚠️ Run this script only inside an isolated virtual machine!
@@ -58,8 +54,6 @@ Locates the .json file inside the reports/ subfolder.
 Copies and renames the file to match the parent folder name (e.g., sample123.json).
 
 🗂️ Example Folder Structure Before
-python-repl
-Copy code
 samples/
 ├── sample1/
 │   └── reports/
@@ -69,18 +63,13 @@ samples/
 │       └── analysis.json
 ...
 🗂️ After Running the Script
-python-repl
-Copy code
 all-json/
 ├── sample1.json
 ├── sample2.json
 ...
 🧪 Usage
-bash
-Copy code
 chmod +x extract_jsons.sh
 ./extract_jsons.sh
 ✅ Run this script from inside the directory containing all your sample folders.
 
 </details>
-
